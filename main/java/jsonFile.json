@@ -1,0 +1,197 @@
+[
+  {
+    "help": "id attribute value must be unique",
+    "nodes": [
+      {
+        "all": [],
+        "failureSummary": "Fix any of the following:\n  Document has multiple static elements with the same id attribute",
+        "impact": "minor",
+        "html": "<div id=\"LeftContent\" class=\"col-xs-12 col-md-8 no-padding\">",
+        "none": [],
+        "any": [
+          {
+            "data": "LeftContent",
+            "impact": "minor",
+            "relatedNodes": [
+              {
+                "html": "<div id=\"LeftContent\" class=\"col-md-12 no-padding\"><button id=\"done-button\" type=\"primary\" class=\"btn btn-primary\">Done</button></div>",
+                "target": [
+                  "#activity_2144_content > .hide-accordion-content > div > .row > .col-md-12.no-padding"
+                ]
+              },
+              {
+                "html": "<div id=\"LeftContent\" class=\"col-md-12 no-padding\"><button id=\"done-button\" type=\"primary\" class=\"btn btn-primary\">Done</button></div>",
+                "target": [
+                  "#activity_2155_content > .hide-accordion-content > div > .row > .col-md-12.no-padding"
+                ]
+              },
+              {
+                "html": "<div id=\"LeftContent\" class=\"col-md-12 no-padding\"><button id=\"done-button\" type=\"primary\" class=\"btn btn-primary\">Done</button></div>",
+                "target": [
+                  "#activity_2151_content > .hide-accordion-content > div > .row > .col-md-12.no-padding"
+                ]
+              },
+              {
+                "html": "<div id=\"LeftContent\" class=\"col-md-12 no-padding\"><button id=\"done-button\" type=\"primary\" class=\"btn btn-primary\">Done</button></div>",
+                "target": [
+                  "#activity_2154_content > .hide-accordion-content > div > .row > .col-md-12.no-padding"
+                ]
+              },
+              {
+                "html": "<div id=\"LeftContent\" class=\"col-md-12 no-padding\"><button id=\"done-button\" type=\"primary\" class=\"btn btn-primary\">Done</button></div>",
+                "target": [
+                  "#activity_2152_content > .hide-accordion-content > div > .row > .col-md-12.no-padding"
+                ]
+              },
+              {
+                "html": "<div id=\"LeftContent\" class=\"col-md-12 no-padding\"><button id=\"done-button\" type=\"primary\" class=\"btn btn-primary\">Done</button></div>",
+                "target": [
+                  "#activity_11-PHY001_content > .hide-accordion-content > div > .row:nth-child(2) > .col-md-12.no-padding"
+                ]
+              },
+              {
+                "html": "<div id=\"LeftContent\" class=\"col-md-12 no-padding\"><button id=\"done-button\" type=\"primary\" class=\"btn btn-primary\">Done</button></div>",
+                "target": [
+                  "#activity_2153_content > .hide-accordion-content > div > .row > .col-md-12.no-padding"
+                ]
+              }
+            ],
+            "id": "duplicate-id",
+            "message": "Document has multiple static elements with the same id attribute"
+          }
+        ],
+        "target": [
+          ".col-md-8"
+        ]
+      },
+      {
+        "all": [],
+        "failureSummary": "Fix any of the following:\n  Document has multiple static elements with the same id attribute",
+        "impact": "minor",
+        "html": "<button id=\"done-button\" type=\"primary\" class=\"btn btn-primary\">Done</button>",
+        "none": [],
+        "any": [
+          {
+            "data": "done-button",
+            "impact": "minor",
+            "relatedNodes": [
+              {
+                "html": "<button id=\"done-button\" type=\"primary\" class=\"btn btn-primary\">Done</button>",
+                "target": [
+                  "#activity_2155_content > .hide-accordion-content > div > .row > .col-md-12.no-padding > button[type=\"primary\"]"
+                ]
+              },
+              {
+                "html": "<button id=\"done-button\" type=\"primary\" class=\"btn btn-primary\">Done</button>",
+                "target": [
+                  "#activity_2151_content > .hide-accordion-content > div > .row > .col-md-12.no-padding > button[type=\"primary\"]"
+                ]
+              },
+              {
+                "html": "<button id=\"done-button\" type=\"primary\" class=\"btn btn-primary\">Done</button>",
+                "target": [
+                  "#activity_2154_content > .hide-accordion-content > div > .row > .col-md-12.no-padding > button[type=\"primary\"]"
+                ]
+              },
+              {
+                "html": "<button id=\"done-button\" type=\"primary\" class=\"btn btn-primary\">Done</button>",
+                "target": [
+                  "#activity_2152_content > .hide-accordion-content > div > .row > .col-md-12.no-padding > button[type=\"primary\"]"
+                ]
+              },
+              {
+                "html": "<button id=\"done-button\" type=\"primary\" class=\"btn btn-primary\">Done</button>",
+                "target": [
+                  "#activity_11-PHY001_content > .hide-accordion-content > div > .row:nth-child(2) > .col-md-12.no-padding > button[type=\"primary\"]"
+                ]
+              },
+              {
+                "html": "<button id=\"done-button\" type=\"primary\" class=\"btn btn-primary\">Done</button>",
+                "target": [
+                  "#activity_2153_content > .hide-accordion-content > div > .row > .col-md-12.no-padding > button[type=\"primary\"]"
+                ]
+              }
+            ],
+            "id": "duplicate-id",
+            "message": "Document has multiple static elements with the same id attribute"
+          }
+        ],
+        "target": [
+          "#activity_2144_content > .hide-accordion-content > div > .row > .col-md-12.no-padding > button[type=\"primary\"]"
+        ]
+      }
+    ],
+    "impact": "minor",
+    "description": "Ensures every id attribute value is unique",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/3.4/duplicate-id?application=axeAPI",
+    "id": "duplicate-id",
+    "tags": [
+      "cat.parsing",
+      "wcag2a",
+      "wcag411"
+    ]
+  },
+  {
+    "help": "Heading levels should only increase by one",
+    "nodes": [
+      {
+        "all": [],
+        "failureSummary": "Fix any of the following:\n  Heading order invalid",
+        "impact": "moderate",
+        "html": "<h4 class=\"zeroMarginBottom\">Not achieved yet</h4>",
+        "none": [],
+        "any": [
+          {
+            "data": 4,
+            "impact": "moderate",
+            "relatedNodes": [],
+            "id": "heading-order",
+            "message": "Heading order invalid"
+          }
+        ],
+        "target": [
+          ".row:nth-child(3) > .col-xs-12 > div:nth-child(2) > .col-xs-6 > span[content=\"\\[object\\ Object\\]\"] > .zeroMarginBottom"
+        ]
+      }
+    ],
+    "impact": "moderate",
+    "description": "Ensures the order of headings is semantically correct",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/3.4/heading-order?application=axeAPI",
+    "id": "heading-order",
+    "tags": [
+      "cat.semantics",
+      "best-practice"
+    ]
+  },
+  {
+    "help": "Page must contain a level-one heading",
+    "nodes": [
+      {
+        "all": [
+          {
+            "impact": "moderate",
+            "relatedNodes": [],
+            "id": "page-has-heading-one",
+            "message": "Page must have a level-one heading"
+          }
+        ],
+        "failureSummary": "Fix all of the following:\n  Page must have a level-one heading",
+        "impact": "moderate",
+        "html": "<html lang=\"en\" class=\"hydrated\">",
+        "none": [],
+        "any": [],
+        "target": [
+          "html"
+        ]
+      }
+    ],
+    "impact": "moderate",
+    "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/3.4/page-has-heading-one?application=axeAPI",
+    "id": "page-has-heading-one",
+    "tags": [
+      "cat.semantics",
+      "best-practice"
+    ]
+  }
+]
